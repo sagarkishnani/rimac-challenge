@@ -15,10 +15,6 @@ Este proyecto es parte del Rimac Challenge y está desarrollado con React, TypeS
 - **zustand:** ^4.5.2
 - **sass:** ^1.71.1
 
-yup: Ofrece una forma sencilla y poderosa de definir esquemas de validación en JavaScript, facilitando la validación de datos en formularios y otros contextos.
-zustand: Proporciona un estado global simple y escalable para aplicaciones React, permitiendo administrar fácilmente el estado compartido entre componentes.
-sass: Amplía las capacidades de estilización en aplicaciones web, permitiendo el uso de características como variables, anidamiento y mixins para crear estilos CSS más mantenibles y reutilizables.
-
 # ¿Por qué se usaron?
 
 - **axios:** Es una herramienta que facilita mucho las solicitudes HTTP en web.
