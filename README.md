@@ -1,3 +1,5 @@
+![Rimac Challenge](https://s3.amazonaws.com/Ategia/Images/SVG/Logos/Aseguradoras/RIMAC.svg)
+
 # Rimac Challenge
 
 Este proyecto es parte del Rimac Challenge y está desarrollado con React, TypeScript y Vite.
