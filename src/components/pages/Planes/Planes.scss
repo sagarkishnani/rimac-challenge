@@ -1,0 +1,25 @@
+@import "../../../app.scss";
+
+.go-back {
+  display: none;
+
+  @include phone {
+    display: block;
+  }
+}
+.plan-option {
+  grid-column: span 12 / span 12;
+}
+
+.plan-option__container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include tablet {
+    text-align: center;
+    width: 580px;
+  }
+}

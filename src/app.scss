@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "SonomaRegular";
+  src: local("br-sonoma-regular"),
+    url("./assets/fonts/br-sonoma-regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "SonomaMedium";
+  src: local("br-sonoma-medium"),
+    url("./assets/fonts/br-sonoma-medium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "SonomaSemi";
+  src: local("br-sonoma-semi"),
+    url("./assets/fonts/br-sonoma-semibold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "SonomaBold";
+  src: local("br-sonoma-bold"),
+    url("./assets/fonts/br-sonoma-bold.otf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-color: #141938;
+}
+
+body {
+  font-family: "SonomaRegular";
+  color: --blue-color;
+}
+
+h2 {
+  font-family: "SonomaBold";
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+h5 {
+  font-family: "SonomaSemi";
+  font-size: 0.875rem;
+  line-height: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pt {
+  &__0 {
+    padding-top: 0rem;
+  }
+  &__sm {
+    padding-top: 0.5rem;
+  }
+  &__md {
+    padding-top: 0.75rem;
+  }
+  &__lg {
+    padding-top: 1rem;
+  }
+  &__xl {
+    padding-top: 1.25rem;
+  }
+  &__2xl {
+    padding-top: 1.5rem;
+  }
+  &__3xl {
+    padding-top: 1.75rem;
+  }
+}
+
+.pb {
+  &__0 {
+    padding-bottom: 0rem;
+  }
+  &__sm {
+    padding-bottom: 0.5rem;
+  }
+  &__md {
+    padding-bottom: 0.75rem;
+  }
+  &__lg {
+    padding-bottom: 1rem;
+  }
+  &__xl {
+    padding-bottom: 1.25rem;
+  }
+  &__2xl {
+    padding-bottom: 1.5rem;
+  }
+  &__3xl {
+    padding-bottom: 1.75rem;
+  }
+}
+
+.pl {
+  &__0 {
+    padding-left: 0rem;
+  }
+  &__sm {
+    padding-left: 0.5rem;
+  }
+  &__md {
+    padding-left: 0.75rem;
+  }
+  &__lg {
+    padding-left: 1rem;
+  }
+}
+
+.pr {
+  &__0 {
+    padding-right: 0rem;
+  }
+  &__sm {
+    padding-right: 0.5rem;
+  }
+  &__md {
+    padding-right: 0.75rem;
+  }
+  &__lg {
+    padding-right: 1rem;
+  }
+}
+
+.size {
+  &__xs {
+    font-size: 0.75rem;
+  }
+
+  &__sm {
+    font-size: 0.875rem;
+  }
+
+  &__md {
+    font-size: 1rem;
+  }
+
+  &__lg {
+    font-size: 1.125rem;
+  }
+
+  &__xl {
+    font-size: 1.25rem;
+  }
+
+  &__2xl {
+    font-size: 1.5rem;
+  }
+
+  &__3xl {
+    font-size: 1.75rem;
+  }
+
+  &__4xl {
+    font-size: 2rem;
+  }
+}
+
+.line-height {
+  &__sm {
+    line-height: 1rem;
+  }
+
+  &__md {
+    line-height: 1.2rem;
+  }
+
+  &__lg {
+    line-height: 1.5rem;
+  }
+}
+
+.font {
+  &__medium {
+    font-family: "SonomaMedium";
+  }
+  &__semi {
+    font-family: "SonomaSemi";
+  }
+  &__bold {
+    font-family: "SonomaBold";
+  }
+}
+
+@mixin phone {
+  @media only screen and (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop-md {
+  @media only screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  @media only screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  padding: 1rem 2rem;
+
+  @include phone {
+    column-gap: 1.25rem;
+    padding: 1rem 4rem;
+  }
+
+  @include desktop-md {
+    column-gap: 2rem;
+  }
+
+  @include desktop-lg {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,37 @@
+@import "../../../app.scss";
+
+.plan-card {
+  background-color: white;
+  padding: 1.5rem 1.2rem 1.5rem 1.2rem;
+  border-radius: 24px;
+  width: 100%;
+  box-shadow: 0px 0px 32px 0px rgba(174, 172, 243, 0.35);
+  -webkit-box-shadow: 0px 0px 32px 0px rgba(174, 172, 243, 0.35);
+  -moz-box-shadow: 0px 0px 32px 0px rgba(174, 172, 243, 0.35);
+  cursor: pointer;
+
+  &__selected {
+    outline: solid 3px #03050f;
+  }
+
+  @include tablet {
+    width: 280px;
+  }
+
+  &__radio {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 32px 0px rgba(174, 172, 243, 0.45);
+    -webkit-box-shadow: 0px 0px 32px 0px rgba(174, 172, 243, 0.45);
+    -moz-box-shadow: 0px 0px 32px 0px rgba(174, 172, 243, 0.45);
+  }
+}

@@ -1,0 +1,12 @@
+@import "../../../app.scss";
+
+.stepper {
+  gap: 1rem;
+  width: 100%;
+  display: block;
+
+  @include phone {
+    display: flex;
+    width: auto;
+  }
+}

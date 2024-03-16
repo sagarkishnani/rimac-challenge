@@ -1,0 +1,31 @@
+.summary-card {
+  background-color: white;
+  padding: 1.5rem 1.2rem 1.5rem 1.2rem;
+  border-radius: 24px;
+  width: 100%;
+  box-shadow: 0px 0px 32px 0px rgba(174, 172, 243, 0.35);
+  -webkit-box-shadow: 0px 0px 32px 0px rgba(174, 172, 243, 0.35);
+  -moz-box-shadow: 0px 0px 32px 0px rgba(174, 172, 243, 0.35);
+
+  hr {
+    border: 1px solid #d7dbf5;
+  }
+  h6 {
+    text-transform: uppercase;
+    font-size: 0.625rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}

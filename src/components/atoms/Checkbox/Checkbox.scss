@@ -1,0 +1,23 @@
+.checkbox-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  align-items: center;
+
+  &__base {
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: #03050f;
+
+    &__error {
+      border-color: red;
+    }
+  }
+
+  &__error-label {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+}

@@ -1,0 +1,8 @@
+.special-plan-cards {
+  grid-column: span 12 / span 12;
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

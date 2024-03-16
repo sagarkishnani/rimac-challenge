@@ -1,0 +1,14 @@
+@import "../../../app.scss";
+
+.stepper-container {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem 0rem;
+
+  @include phone {
+    justify-content: center;
+    background-color: #edeffc;
+  }
+}

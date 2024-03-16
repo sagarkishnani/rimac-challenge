@@ -1,0 +1,17 @@
+@import "../../../app.scss";
+
+.button {
+  &__inner {
+    padding: 1.25rem 2.25rem;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    border-radius: 40px;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  @include phone {
+    width: fit-content;
+  }
+}

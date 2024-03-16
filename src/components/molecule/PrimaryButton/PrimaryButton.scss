@@ -1,0 +1,11 @@
+.primary-button {
+  color: white;
+  border: #03050f solid 2px;
+  background-color: #03050f;
+
+  &:hover {
+    background-color: white;
+    color: #03050f;
+    border: #03050f solid 2px;
+  }
+}

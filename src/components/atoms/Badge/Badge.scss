@@ -1,0 +1,14 @@
+.primary-badge {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  width: fit-content;
+
+  &__gradient {
+    background: linear-gradient(86.01deg, #00f4e2, #00ff7f);
+  }
+
+  &__regular {
+    background-color: #7df0ba;
+  }
+}

@@ -1,0 +1,69 @@
+.select-input-container {
+  width: 100%;
+  margin-bottom: 1rem;
+
+  &__error {
+    .select-input,
+    .select-input-adjacent {
+      border-color: red;
+    }
+  }
+
+  .select-input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .select-input {
+      width: 40%;
+      padding: 1.22rem 1rem;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-top: 1px solid #5e6488;
+      border-bottom: 1px solid #5e6488;
+      border-left: 1px solid #5e6488;
+      border-right: none;
+      transition: border-color 0.2s;
+
+      &:focus {
+        border: 1px solid black;
+      }
+
+      &::placeholder {
+        color: #5e6488;
+      }
+
+      &__error {
+        border-color: red;
+      }
+    }
+
+    .select-input-adjacent {
+      position: relative;
+      width: 60%;
+      padding: 1.25rem 1rem;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border: 1px solid #5e6488;
+      transition: border-color 0.2s;
+
+      &:focus {
+        border: 1px solid black;
+      }
+
+      &::placeholder {
+        color: #5e6488;
+      }
+
+      &__error {
+        border-color: red;
+      }
+    }
+  }
+
+  .select-input-error-label {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+}

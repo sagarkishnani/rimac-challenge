@@ -1,0 +1,10 @@
+@import "../../../app.scss";
+
+.access-form {
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+
+  @include phone {
+    padding: 0rem;
+  }
+}

@@ -1,0 +1,50 @@
+.input-container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+
+  &__base {
+    width: 100%;
+    padding: 1.25rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #5e6488;
+    transition: border-color 0.2s;
+
+    &::placeholder {
+      color: #5e6488;
+    }
+
+    &:focus {
+      border: 1px solid black;
+    }
+
+    &__error {
+      border-color: red;
+    }
+  }
+
+  &__error-label {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .input-label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+    pointer-events: none;
+    transition: 0.2s;
+    color: #777;
+
+    &__error {
+      top: 30%;
+    }
+
+    &__focused {
+      top: 0.75rem;
+      font-size: 0.75rem;
+    }
+  }
+}

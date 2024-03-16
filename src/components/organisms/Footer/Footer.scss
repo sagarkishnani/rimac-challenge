@@ -1,0 +1,48 @@
+@import "../../../app.scss";
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  background-color: #03050f;
+}
+
+.footer-container {
+  background-color: #03050f;
+  padding: 1.2rem 0rem;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+
+  @include tablet {
+    text-align: left;
+    gap: 0;
+    flex-direction: row;
+  }
+
+  &__left {
+    grid-column: span 12 / span 12;
+
+    @include phone {
+      grid-column: span 8 / span 8;
+    }
+  }
+
+  &__right {
+    grid-column: span 12 / span 12;
+    color: #f8f9ff;
+    font-size: 14px;
+
+    @include phone {
+      grid-column: span 4 / span 4;
+    }
+  }
+
+  hr {
+    grid-column: span 12 / span 12;
+    border: 1px solid #2b304e;
+
+    @include phone {
+      display: none;
+    }
+  }
+}

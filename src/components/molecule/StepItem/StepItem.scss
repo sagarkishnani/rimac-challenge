@@ -1,0 +1,59 @@
+@import "../../../app.scss";
+
+.step-item {
+  display: none;
+  gap: 1rem;
+
+  @include phone {
+    display: flex;
+  }
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    &__inactive {
+      color: #7981b2;
+      border: 1px solid #7981b2;
+    }
+
+    &__active {
+      background-color: #4f4fff;
+      color: white;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+
+    &__inactive {
+      color: #7981b2;
+    }
+
+    &__active {
+      color: --blue-color;
+    }
+  }
+
+  &__mobile {
+    align-items: center;
+    &__back {
+      grid-column: span 2 / span 2;
+    }
+    &__step {
+      grid-column: span 4 / span 4;
+    }
+    &__progress {
+      grid-column: span 6 / span 6;
+      width: 100%;
+    }
+    @include phone {
+      display: none !important;
+    }
+  }
+}

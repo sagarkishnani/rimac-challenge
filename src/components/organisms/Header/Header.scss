@@ -1,0 +1,41 @@
+@import "../../../app.scss";
+
+.header {
+  &__left {
+    grid-column: span 6 / span 6;
+
+    @include tablet {
+      grid-column: span 8 / span 8;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    grid-column: span 6 / span 6;
+
+    @include tablet {
+      grid-column: span 4 / span 4;
+    }
+
+    &__buy {
+      font-size: 12px;
+      display: none;
+
+      @include desktop-md {
+        display: block;
+      }
+    }
+
+    &__phone {
+      font-size: 16px;
+
+      &__icon {
+        vertical-align: middle;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
