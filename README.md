@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# Rimac Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es parte del Rimac Challenge y está desarrollado con React, TypeScript y Vite.
 
-Currently, two official plugins are available:
+## Dependencias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **axios:** ^1.6.7
+- **formik:** ^2.4.5
+- **react:** ^18.2.0
+- **react-dom:** ^18.2.0
+- **react-router-dom:** ^6.22.3
+- **yup:** ^1.4.0
+- **zustand:** ^4.5.2
 
-## Expanding the ESLint configuration
+## Descripción
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Este proyecto es una aplicación web desarrollada para abordar el desafío propuesto por Rimac. Utiliza diversas bibliotecas de JavaScript y TypeScript para facilitar el desarrollo ágil y eficiente.
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clona este repositorio en tu máquina local.
+2. Abre una terminal en la carpeta del proyecto.
+3. Ejecuta el comando `npm install` para instalar todas las dependencias.
+4. Para ejecutar el proyecto en modo de desarrollo, utiliza el comando `npm run dev`.
