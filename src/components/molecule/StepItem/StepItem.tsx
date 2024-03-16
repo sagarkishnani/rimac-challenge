@@ -2,6 +2,7 @@ import "./StepItem.scss";
 import ProgressBar from "../../atoms/ProgressBar/ProgressBar";
 import line from "@/assets/images/icons/step-item/line.svg";
 import back from "@/assets/images/icons/step-item/back-circle.svg";
+import { Link } from "react-router-dom";
 
 interface StepItemProps {
   title: string;
@@ -48,7 +49,9 @@ const StepItem: React.FC<StepItemProps> = ({
       {isActive && (
         <div className="step-item__mobile custom-grid">
           <div className="step-item__mobile__back">
-            <img src={back} alt="back" />
+            <Link to={"/"}>
+              <img src={back} alt="back" />
+            </Link>
           </div>
           <div className="step-item__mobile__step">
             Paso {index + 1} de {totalSteps}

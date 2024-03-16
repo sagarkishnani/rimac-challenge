@@ -15,9 +15,29 @@ Este proyecto es parte del Rimac Challenge y está desarrollado con React, TypeS
 - **zustand:** ^4.5.2
 - **sass:** ^1.71.1
 
+yup: Ofrece una forma sencilla y poderosa de definir esquemas de validación en JavaScript, facilitando la validación de datos en formularios y otros contextos.
+zustand: Proporciona un estado global simple y escalable para aplicaciones React, permitiendo administrar fácilmente el estado compartido entre componentes.
+sass: Amplía las capacidades de estilización en aplicaciones web, permitiendo el uso de características como variables, anidamiento y mixins para crear estilos CSS más mantenibles y reutilizables.
+
+# ¿Por qué se usaron?
+
+- **axios:** Es una herramienta que facilita mucho las solicitudes HTTP en web.
+- **formik:** Simplifica de gran forma la gestión de formularios en React y no te restringe en el diseño de los controles.
+- **react-router-dom:** Permite la navegación en aplicaciones React de forma fácil y simplificada.
+- **yup:** Es una herramienta sencilla de usar para definir validaciones en formularios y otros.
+- **zustand:** Brinda el manejo del estado global que fácilmente puede ser compartido entre componentes.
+- **sass:** Amplía las capacidades de estilos en web, combinándolo con variables, anidamiento, etc.
+
 ## Descripción
 
 Este proyecto es una aplicación web desarrollada para abordar el desafío propuesto por Rimac. Utiliza diversas bibliotecas de JavaScript y TypeScript para facilitar el desarrollo ágil y eficiente.
+
+Se siguieron los siguientes pasos para desarrollar la aplicación web:
+
+- **Paso 1:** Planificación de la estructura de carpetas y dependencias a usar.
+- **Paso 2:** Maquetación del sitio.
+- **Paso 3:** Manejo de lógica dentro de la aplicación.
+- **Paso 4:** Pruebas QA.
 
 ## Instalación
 
