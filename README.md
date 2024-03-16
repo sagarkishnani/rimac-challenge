@@ -13,6 +13,7 @@ Este proyecto es parte del Rimac Challenge y está desarrollado con React, TypeS
 - **react-router-dom:** ^6.22.3
 - **yup:** ^1.4.0
 - **zustand:** ^4.5.2
+- **sass:** ^1.71.1
 
 ## Descripción
 
